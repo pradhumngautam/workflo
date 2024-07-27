@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import Password from "@/components/ui/password";
 import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
 
@@ -12,7 +13,7 @@ const Signin = () => {
         </div>
         <div className="w-[528px] h-[290px] flex flex-col gap-[30px] mt-4">
           <Textarea placeholder="Your email" />
-          <Textarea placeholder="Password" />
+          <Password />
           <Button className="text-[20px] font-normal text-[#FFFFFF]">
             Login
           </Button>
