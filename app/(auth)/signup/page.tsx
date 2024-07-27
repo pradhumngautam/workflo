@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
+import Link from "next/link";
 
 const Signup = () => {
   return (
@@ -18,7 +19,7 @@ const Signup = () => {
           </Button>
         </div>
         <div className="h-[24px] font-normal text-[20px] text-center text-[#606060] mt-4 ">
-          Already have an account?<span className="text-[#0054A1]">Log in</span>
+          Already have an account?<Link href={"/signin"} className="text-[#0054A1]">Log in</Link>
           .
         </div>
       </Card>
