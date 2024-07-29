@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { tagcontent } from "./tag-content";
+import Tagcard from "./tag-card";
 
 const Tags = () => {
   return (
@@ -8,14 +10,18 @@ const Tags = () => {
           Good morning, Joe!
         </div>
         <div className="flex gap-1 items-center">
-          <div className="font-normal text-[16px] text-[#080808]">Help & feedback </div>{" "}
+          <div className="font-normal text-[16px] text-[#080808]">
+            Help & feedback{" "}
+          </div>{" "}
           <div>
             <Image src={"/question.svg"} alt="" height={24} width={24} />
           </div>
         </div>
       </div>
-          <div className="h-[123px] gap-[8px]">
-              
+          <div className="h-[123px] gap-[8px] flex flex-row ">
+              {tagcontent.map((item,idx) =>(
+              <Tagcard key={idx} src={item.src} title={item.title} content={item.content} />
+              ))}
       </div>
       <div></div>
     </div>
