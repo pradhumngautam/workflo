@@ -11,7 +11,7 @@ const Sidebar = () => {
         <div className="w-[253px] h-[79px] gap-[8px]">
           <Userinfo />
         </div>
-        <div className="flex flex-col mt-3">
+        <div className="flex flex-col gap-[9px] mt-3">
           {content.map((item, idx) => (
             <Sidebaritems key={idx} image={item.image} content={item.content} />
           ))}
