@@ -23,7 +23,13 @@ const Tags = () => {
               <Tagcard key={idx} src={item.src} title={item.title} content={item.content} />
               ))}
       </div>
-      <div></div>
+          <div className="w-[1107px] h-[40px] flex justify-between">
+              <div className="w-[196px] h-[40px] flex justify-between rounded-[8px] border-[1px] bg-[#FFFFFF] border-[#E9E9E9] p-[8px] ">
+                  <div className="font-normal text-[16px] text-[#797979]">Search</div>
+                  <div><Image src={"/search.svg"} alt="" height={24} width={24} /></div>
+              </div>
+              <div></div>
+      </div>
     </div>
   );
 };
