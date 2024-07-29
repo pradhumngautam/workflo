@@ -14,7 +14,7 @@ const buttonVariants = cva(
         destructive:
           "bg-gradient-to-b from-[#4C38C2] to-[#2F2188] hover:bg-destructive/90",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "bg-gradient-to-b from-[#4C38C2] to-[#2F2188] hover:bg-destructive/90",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
@@ -23,7 +23,7 @@ const buttonVariants = cva(
       size: {
         default: "h-[52px] px-4 py-2 border-[1px]",
         sm: "h-[52px] w-[253px] rounded-[8px] border-[1px] p-[8px] border-[#9C93D4]",
-        lg: "h-11 rounded-md px-8",
+        lg: "h-[40px] w-[136px] rounded-[8px] border-[1px] border-[#9C93D4] p-[8px]",
         icon: "h-10 w-10",
       },
     },
