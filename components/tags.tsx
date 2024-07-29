@@ -14,7 +14,9 @@ const Tags = () => {
           </div>
         </div>
       </div>
-      <div></div>
+          <div className="h-[123px] gap-[8px]">
+              
+      </div>
       <div></div>
     </div>
   );
