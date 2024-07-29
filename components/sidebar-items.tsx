@@ -4,10 +4,12 @@ import { contentdata } from "./sidebar-content";
 type contentprops = contentdata;
 
 const Sidebaritems = ({ image, content }: contentprops) => {
-  <div className="flex flex-col w-[253px] h-[200px] gap-[8px]">
-    <Image src={image.src} alt="" height={24} width={24} />
-      <div className="font-normal text-[20px] ">{content}</div>
-  </div>;
+  return (
+    <div className="flex w-[253px] items-center gap-[14px]">
+      <div><Image src={image.src} alt="" height={24} width={24} /></div>
+      <div className="font-normal text-[20px] text-[#797979] ">{content}</div>
+    </div>
+  );
 };
 
 export default Sidebaritems;
