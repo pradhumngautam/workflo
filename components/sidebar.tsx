@@ -1,5 +1,7 @@
 
 import Userinfo from "./head";
+import { content } from "./sidebar-content";
+import Sidebaritems from "./sidebar-items";
 
 const Sidebar = () => {
     return (
@@ -9,7 +11,15 @@ const Sidebar = () => {
         </div>
   
         <div className="flex flex-col w-full">
-          
+                {content.map(idx)=>
+                return(
+                <div key={idx}>
+                    <Sidebaritems
+                        image={image.src},
+                    content={content}/>
+                    
+                </div>
+          )}
         </div>
       </div>
     );
