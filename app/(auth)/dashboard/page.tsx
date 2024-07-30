@@ -1,5 +1,6 @@
 import Sidebar from "@/components/sidebar";
 import Tags from "@/components/tags";
+import Tasks from "@/components/task";
 
 const Dashboard = () => {
   return (
@@ -9,6 +10,7 @@ const Dashboard = () => {
       </div>
       <div className="w-[1107px] p-4">
         <Tags />
+        <Tasks />
       </div>
     </div>
   );
