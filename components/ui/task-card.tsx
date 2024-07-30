@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { todosdata } from "../todos";
 import { Badge } from "./badge";
 import { Button } from "./button";
@@ -14,19 +15,31 @@ const Taskcard = ({ title, content, priority, deadline, time }: Cardprops) => {
             {content}
           </div>
         </div>
-        <div>
-          {priority == "Low" && <Badge className="">{priority}</Badge>}
+        <div className="font-normal text-[12px] text-[#FFFFFF]">
+          {priority == "Low" && (
+            <div className="w-[40px] h-[27px] rounded-[8px] pt-[6px] pr-[8px] pb-[6px] pl-[8px] bg-[#0ECC5A]">
+              {priority}
+            </div>
+          )}
           {priority == "Medium" && (
-            <div className="text-green-600">{priority}</div>
+            <div className="w-[62px] h-[27px] rounded-[8px] pt-[6px] pr-[8px] pb-[6px] pl-[8px] bg-[#FFA235]">
+              {priority}
+            </div>
           )}
           {priority == "Urgent" && (
-            <div className="text-red-600">{priority}</div>
+            <div className="w-[55px] h-[27px] rounded-[8px] pt-[6px] pr-[8px] pb-[6px] pl-[8px] bg-[#FF6B6B]">
+              {priority}
+            </div>
           )}
         </div>
-
-        <div></div>
+        <div className="w-[115px] h-[24px] flex gap-[8px]">
+          <Image src={"/time.svg"} alt="" height={24} width={24} />
+          <div className="text-[#606060] text-[14px] font-semibold">
+            {deadline}
+          </div>
+        </div>
       </div>
-      <div></div>
+      <div className="font-normal text-[14px] text-[#797979]">{time}</div>
     </div>
   );
 };
