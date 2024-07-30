@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 import { todos } from "./todos";
 import Taskcard from "./ui/task-card";
+import Addnew from "./ui/add-new";
 
 const Todo = () => {
   return (
@@ -22,7 +23,7 @@ const Todo = () => {
           />
         ))}
       </div>
-      <div></div>
+      <Addnew />
     </div>
   );
 };
