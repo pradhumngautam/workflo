@@ -1,7 +1,7 @@
 import Image from "next/image";
+
 import { todosdata } from "../todos";
-import { Badge } from "./badge";
-import { Button } from "./button";
+
 
 type Cardprops = todosdata;
 
@@ -32,7 +32,7 @@ const Taskcard = ({ title, content, priority, deadline, time }: Cardprops) => {
             </div>
           )}
         </div>
-        <div className="w-[115px] h-[24px] flex gap-[8px]">
+        <div className="w-[115px] h-[24px] flex gap-[8px] items-center">
           <Image src={"/time.svg"} alt="" height={24} width={24} />
           <div className="text-[#606060] text-[14px] font-semibold">
             {deadline}

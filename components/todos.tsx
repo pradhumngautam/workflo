@@ -14,5 +14,5 @@ export const todos = [
     priority: "Urgent",
     deadline: "2024-08-15",
     time: "1 hr ago",
-  }
+  },
 ];
